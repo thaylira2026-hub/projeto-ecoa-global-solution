@@ -8,6 +8,38 @@ type Barreira = {
   comEcoa: string
 }
 
+type OutroPublico = {
+  icone: string
+  titulo: string
+  jaFunciona: string[]
+  emBreve: string[]
+}
+
+const outrosPublicos: OutroPublico[] = [
+  {
+    icone: '👁️',
+    titulo: 'Deficiência visual',
+    jaFunciona: [
+      'Funciona com leitores de tela, como NVDA e TalkBack',
+      'Botão para ouvir a página em voz alta',
+      'Alto contraste e letra maior',
+    ],
+    emBreve: ['Áudios gravados com a explicação de cada serviço'],
+  },
+  {
+    icone: '📖',
+    titulo: 'Pessoas não alfabetizadas',
+    jaFunciona: ['Ícones em cada serviço', 'Leitura da página em voz alta'],
+    emBreve: ['Checklist de documentos só com imagens', 'Atendimento por áudio no WhatsApp'],
+  },
+  {
+    icone: '♿',
+    titulo: 'Deficiência motora',
+    jaFunciona: ['Navegação completa pelo teclado', 'Botões grandes, fáceis de acertar'],
+    emBreve: ['Comandos de voz para navegar e preencher', 'Formulários sem limite de tempo'],
+  },
+]
+
 const barreiras: Barreira[] = [
   {
     momento: 'Entender o serviço',
@@ -78,6 +110,36 @@ export default function Solucao() {
                 <p>
                   <span className="font-semibold">Com o Ecoa+:</span> {barreira.comEcoa}
                 </p>
+              </Cartao>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section aria-labelledby="titulo-outros">
+        <h2 id="titulo-outros" className="text-2xl font-bold">
+          Também pensamos em outras deficiências
+        </h2>
+        <p className="mt-2 max-w-3xl text-lg text-tinta/80">
+          O foco do Ecoa+ é a deficiência auditiva, mas o site já ajuda outros públicos e vai
+          crescer para atendê-los cada vez melhor.
+        </p>
+        <ul className="mt-6 grid gap-4 md:grid-cols-3">
+          {outrosPublicos.map((publico) => (
+            <li key={publico.titulo}>
+              <Cartao titulo={publico.titulo} icone={publico.icone}>
+                <p className="font-semibold text-mare">Já funciona</p>
+                <ul className="list-disc space-y-1 pl-5">
+                  {publico.jaFunciona.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+                <p className="pt-2 font-semibold text-tinta">Em breve</p>
+                <ul className="list-disc space-y-1 pl-5">
+                  {publico.emBreve.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
               </Cartao>
             </li>
           ))}

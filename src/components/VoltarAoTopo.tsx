@@ -1,33 +1,38 @@
-import { useEffect, useState } from 'react'
+import BotaoOuvir from './BotaoOuvir'
 
-export default function VoltarAoTopo() {
-  const [visivel, setVisivel] = useState(false)
+type TituloPaginaProps = {
+  titulo: string
+  destaque?: string
+  etiqueta?: string
+  icone?: string
+  descricao?: string
+}
 
-  useEffect(() => {
-    function verificarRolagem() {
-      setVisivel(window.scrollY > 400)
-    }
-    window.addEventListener('scroll', verificarRolagem)
-    return () => window.removeEventListener('scroll', verificarRolagem)
-  }, [])
-
-  function voltar() {
-    const reduzirMovimento = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    window.scrollTo({ top: 0, behavior: reduzirMovimento ? 'auto' : 'smooth' })
-  }
-
-  if (!visivel) {
-    return null
-  }
-
+export default function TituloPagina({ titulo, destaque, etiqueta, icone, descricao }: TituloPaginaProps) {
   return (
-    <button
-      type="button"
-      onClick={voltar}
-      aria-label="Voltar ao topo da página"
-      className="fixed bottom-6 right-6 z-30 flex h-14 w-14 items-center justify-center rounded-full bg-mare text-2xl text-white shadow-lg hover:bg-sinal hover:text-tinta"
-    >
-      <span aria-hidden="true">↑</span>
-    </button>
+    <header className="mb-14 rounded-3xl bg-mare-clara/50 px-6 py-14 text-center md:py-16">
+      {etiqueta && (
+        <p className="inline-flex items-center gap-2 text-lg font-semibold text-mare">
+          {icone && <span aria-hidden="true">{icone}</span>}
+          {etiqueta}
+        </p>
+      )}
+      <h1 className="mt-3 text-3xl font-extrabold tracking-tight md:text-5xl">
+        {titulo}
+        {destaque && (
+          <>
+            {' '}
+            <span className="text-mare/50" aria-hidden="true">/</span>{' '}
+            <span className="text-mare">{destaque}</span>
+          </>
+        )}
+      </h1>
+      {descricao && (
+        <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-tinta/80 md:text-xl">
+          {descricao}
+        </p>
+      )}
+      <BotaoOuvir centralizado />
+    </header>
   )
 }
