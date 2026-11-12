@@ -1,7 +1,8 @@
 export type Integrante = {
   nome: string
   rm: string
-  turma: string
+  funcao: string
   github: string
   linkedin?: string
+  foto?: string
 }

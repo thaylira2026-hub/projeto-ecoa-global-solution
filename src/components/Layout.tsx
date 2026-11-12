@@ -4,15 +4,16 @@ import Footer from './Footer'
 
 export default function Layout() {
   return (
-    <div className="flex min-h-screen flex-col bg-slate-50 text-slate-900">
+    <div className="flex min-h-screen flex-col bg-nevoa text-tinta">
+      {/* Aparece só para quem navega com a tecla Tab */}
       <a
         href="#conteudo"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-20 focus:rounded-lg focus:bg-white focus:p-3 focus:font-bold"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-20 focus:rounded-lg focus:bg-sinal focus:p-3 focus:font-semibold"
       >
         Pular para o conteúdo
       </a>
       <Header />
-      <main id="conteudo" className="mx-auto w-full max-w-6xl flex-1 px-4 py-8">
+      <main id="conteudo" className="mx-auto w-full max-w-6xl flex-1 px-4 py-10">
         <Outlet />
       </main>
       <Footer />

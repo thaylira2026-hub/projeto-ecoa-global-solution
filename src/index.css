@@ -1,6 +1,29 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: "Lexend", ui-sans-serif, system-ui, sans-serif;
+
+  --color-tinta: #0e2a33;
+  --color-mare: #0f766e;
+  --color-mare-clara: #ccebe6;
+  --color-sinal: #ffc83d;
+  --color-nevoa: #eef4f3;
+
+  --animate-eco: eco 3s ease-out infinite;
+
+  @keyframes eco {
+    0% {
+      transform: scale(0.6);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1.6);
+      opacity: 0;
+    }
+  }
+}
+
 :focus-visible {
-  outline: 3px solid #f59e0b;
-  outline-offset: 2px;
+  outline: 3px solid var(--color-sinal);
+  outline-offset: 3px;
 }
