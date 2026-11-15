@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
-import { textoDaPagina, useLeitura } from '../hooks/UseLeitura'
+import { textoDaPagina, useLeitura } from '../hooks/useLeitura'
 
 const TAMANHOS_LETRA = [100, 112.5, 125, 137.5]
 
