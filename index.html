@@ -17,6 +17,17 @@
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
       if (window.VLibras) {
+        // O VLibras lembra se ficou aberto na última visita e abre sozinho.
+        // Aqui marcamos como fechado, para ele só abrir quando a pessoa clicar.
+        try {
+          var salvo = localStorage.getItem('@vlibras-widget')
+          if (salvo) {
+            localStorage.setItem('@vlibras-widget', salvo.replace('"isOpen":true', '"isOpen":false'))
+          }
+        } catch (e) {
+          // Sem localStorage, não há nada salvo para limpar
+        }
+
         new window.VLibras.Widget('https://vlibras.gov.br/app')
 
         // O ícone azul padrão tem só 40px. Aqui ele passa para 64px.
