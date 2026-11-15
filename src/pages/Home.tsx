@@ -1,4 +1,6 @@
 import BotaoLink from '../components/BotaoLink'
+import BotaoLibras from '../components/BotaoLibras'
+import BotaoOuvir from '../components/BotaoOuvir'
 
 type Etapa = {
   titulo: string
@@ -24,6 +26,8 @@ const etapas: Etapa[] = [
   },
 ]
 
+// Ilustração do aviso de "sua vez", com as ondas do eco ao redor.
+// É só decorativa, por isso fica escondida do leitor de tela (aria-hidden).
 function CelularAviso() {
   return (
     <div
@@ -69,6 +73,10 @@ export default function Home() {
             <BotaoLink to="/solucao" variante="secundario">
               Como funciona
             </BotaoLink>
+          </div>
+          <div data-nao-ler className="mt-6 flex flex-wrap gap-3">
+            <BotaoLibras />
+            <BotaoOuvir />
           </div>
         </div>
         <CelularAviso />

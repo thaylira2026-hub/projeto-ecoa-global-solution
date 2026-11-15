@@ -1,13 +1,9 @@
-import { textoDaPagina, useLeitura } from '../hooks/UseLeitura'
-
-type BotaoOuvirProps = {
-  centralizado?: boolean
-}
+import { textoDaPagina, useLeitura } from '../hooks/useLeitura'
 
 const estiloBotao =
   'inline-flex items-center gap-2 rounded-full px-5 py-3 text-lg font-semibold transition-colors'
 
-export default function BotaoOuvir({ centralizado = false }: BotaoOuvirProps) {
+export default function BotaoOuvir() {
   const { suportado, estado, ler, pausar, continuar, parar } = useLeitura()
 
   // Se o navegador não tem voz, o botão não aparece
@@ -16,10 +12,7 @@ export default function BotaoOuvir({ centralizado = false }: BotaoOuvirProps) {
   }
 
   return (
-    <div
-      data-nao-ler
-      className={`mt-6 flex flex-wrap gap-3 ${centralizado ? 'justify-center' : ''}`}
-    >
+    <div data-nao-ler className="flex flex-wrap gap-3">
       {estado === 'parado' && (
         <button
           type="button"

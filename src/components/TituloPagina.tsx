@@ -1,3 +1,6 @@
+import BotaoLibras from './BotaoLibras'
+import BotaoOuvir from './BotaoOuvir'
+
 type TituloPaginaProps = {
   titulo: string
   destaque?: string
@@ -30,6 +33,10 @@ export default function TituloPagina({ titulo, destaque, etiqueta, icone, descri
           {descricao}
         </p>
       )}
+      <div data-nao-ler className="mt-6 flex flex-wrap justify-center gap-3">
+        <BotaoLibras />
+        <BotaoOuvir />
+      </div>
     </header>
   )
 }
