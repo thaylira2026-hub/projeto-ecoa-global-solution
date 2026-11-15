@@ -129,7 +129,7 @@ export default function BarraAcessibilidade() {
         aria-expanded={aberta}
         aria-controls="painel-acessibilidade"
         aria-label={aberta ? 'Fechar opções de acessibilidade' : 'Abrir opções de acessibilidade'}
-        className="flex h-14 w-14 items-center justify-center rounded-full bg-tinta text-3xl text-white shadow-lg hover:bg-mare"
+        className="flex h-14 w-14 items-center justify-center rounded-full bg-tinta text-3xl text-white shadow-lg ring-2 ring-white hover:bg-mare"
       >
         <span aria-hidden="true">{aberta ? '✕' : '♿'}</span>
       </button>
