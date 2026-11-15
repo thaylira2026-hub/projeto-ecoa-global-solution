@@ -12,7 +12,7 @@ export const integrantes: Integrante[] = [
   {
     nome: 'Isabelle Souza Lima Pires Araujo',
     rm: 'RM569370',
-    funcao: 'Banco de dados e Python',
+    funcao: 'Banco de dados e IA',
     github: 'https://github.com/isasouzz',
     linkedin: 'https://www.linkedin.com/in/isabelle-souza-9342a027a/',
     foto: '/img/foto_isa.jpeg',
@@ -20,7 +20,7 @@ export const integrantes: Integrante[] = [
   {
     nome: 'Maria Eduarda Cavallari Quarelo',
     rm: 'RM570462',
-    funcao: 'IA e Software Engineering',
+    funcao: 'Python e Software Engineering',
     github: 'https://github.com/dudaquarelo',
     linkedin: 'https://www.linkedin.com/in/dudaquarelo/',
     foto: '/img/foto_duda.jpeg',
