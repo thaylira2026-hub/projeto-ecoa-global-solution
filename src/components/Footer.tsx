@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Logo from './Logo'
 
 type LinkRodape = {
   label: string
@@ -47,7 +48,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 pt-14">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p className="text-3xl font-extrabold text-white">Ecoa+</p>
+            <Logo negativo tamanho={44} />
             <p className="mt-3 max-w-xs leading-relaxed text-nevoa/80">
               Serviços públicos acessíveis para pessoas surdas e com deficiência auditiva. Entenda,
               agende e seja avisado quando chegar a sua vez.

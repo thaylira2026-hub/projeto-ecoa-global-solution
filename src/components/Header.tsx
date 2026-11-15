@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import Logo from './Logo'
 
 type LinkMenu = {
   to: string
@@ -32,12 +33,8 @@ export default function Header() {
   return (
     <header className="relative border-b border-tinta/10 bg-white">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
-        <NavLink
-          to="/"
-          className="text-3xl font-extrabold tracking-tight text-tinta"
-          onClick={() => setAberto(false)}
-        >
-          Ecoa+
+        <NavLink to="/" aria-label="Ecoa+, página inicial" onClick={() => setAberto(false)}>
+          <Logo tamanho={44} />
         </NavLink>
 
         <button
