@@ -91,6 +91,11 @@ export const categoriasFaq: CategoriaFaq[] = [
           'É uma ferramenta gratuita do governo federal que traduz textos em português para Libras com um avatar animado.',
       },
       {
+        pergunta: 'Não consigo ouvir a leitura da página no celular. O que faço?',
+        resposta:
+          'No iPhone, a leitura em voz alta não toca com o modo silencioso ligado. Desligue o silencioso pela chave na lateral ou pela Central de Controle, aumente o volume e toque de novo em "Ouvir esta página". Em outros celulares, confira se o volume de mídia está alto.',
+      },
+      {
         pergunta: 'O site funciona com leitor de tela e teclado?',
         resposta:
           'Sim. Todas as páginas podem ser navegadas pelo teclado e os campos e botões têm descrições para leitores de tela.',
