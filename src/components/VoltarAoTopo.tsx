@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react'
+import { voltarAoTopo } from '../utils/atalhos'
 
+// Botão redondo de voltar ao topo. Só aparece no computador:
+// no celular, o "Topo" fica na barra de atalhos lá embaixo.
 export default function VoltarAoTopo() {
   const [visivel, setVisivel] = useState(false)
 
@@ -11,12 +14,6 @@ export default function VoltarAoTopo() {
     return () => window.removeEventListener('scroll', verificarRolagem)
   }, [])
 
-  function voltar() {
-    // Respeita quem pediu ao sistema para reduzir animações
-    const reduzirMovimento = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    window.scrollTo({ top: 0, behavior: reduzirMovimento ? 'auto' : 'smooth' })
-  }
-
   if (!visivel) {
     return null
   }
@@ -24,9 +21,9 @@ export default function VoltarAoTopo() {
   return (
     <button
       type="button"
-      onClick={voltar}
+      onClick={voltarAoTopo}
       aria-label="Voltar ao topo da página"
-      className="fixed bottom-6 right-6 z-30 flex h-14 w-14 items-center justify-center rounded-full bg-mare text-2xl text-white shadow-lg ring-2 ring-white hover:bg-sinal hover:text-tinta"
+      className="fixed bottom-6 right-6 z-30 hidden h-14 w-14 items-center justify-center rounded-full bg-mare text-2xl text-white shadow-lg ring-2 ring-white hover:bg-sinal hover:text-tinta md:flex"
     >
       <span aria-hidden="true">↑</span>
     </button>
