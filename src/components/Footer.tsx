@@ -78,7 +78,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="mt-12 border-t border-white/10 pb-24 pt-8 text-center text-sm text-nevoa/60 md:pb-8">
+        <div className="mt-12 border-t border-white/10 pb-24 pt-8 text-center text-sm text-nevoa/60 lg:pb-8">
           <p>© {anoAtual} Ecoa+ · Global Solution FIAP · Turma 1TDSR</p>
           <p className="mt-2">Feito com 💚 pela equipe Inova Lab</p>
         </div>

@@ -25,7 +25,7 @@ function salvarPreferencia(chave: string, valor: string) {
 const estiloOpcao =
   'flex h-12 items-center rounded-2xl border-2 border-tinta/15 px-4 text-lg font-semibold hover:border-mare disabled:opacity-40'
 
-// Botões da barra de atalhos do celular: ícone em cima, nome embaixo
+// Botões da barra de atalhos do celular e do tablet: ícone em cima, nome embaixo
 const estiloAtalho =
   'flex flex-1 flex-col items-center justify-center gap-0.5 rounded-2xl py-2 text-base font-semibold text-tinta hover:bg-nevoa'
 
@@ -62,11 +62,11 @@ export default function BarraAcessibilidade() {
   }
 
   return (
-    <div className="z-30 md:fixed md:bottom-6 md:left-6">
+    <div className="z-30 lg:fixed lg:bottom-6 lg:left-6">
       {aberta && (
         <div
           id="painel-acessibilidade"
-          className="fixed inset-x-3 bottom-24 z-30 max-h-[70vh] overflow-y-auto rounded-3xl border border-tinta/10 bg-white p-5 text-tinta shadow-xl md:absolute md:inset-x-auto md:bottom-16 md:left-0 md:w-72"
+          className="fixed inset-x-3 bottom-24 z-30 max-h-[70vh] overflow-y-auto rounded-3xl border border-tinta/10 bg-white p-5 text-tinta shadow-xl lg:absolute lg:inset-x-auto lg:bottom-16 lg:left-0 lg:w-72"
         >
           <h2 className="text-xl font-extrabold">Acessibilidade</h2>
 
@@ -128,10 +128,10 @@ export default function BarraAcessibilidade() {
         </div>
       )}
 
-      {/* Celular: barra fixa embaixo, com nomes nos botões, sem cobrir o texto */}
+      {/* Celular e tablet: barra fixa embaixo, com nomes nos botões, sem cobrir o texto */}
       <nav
         aria-label="Atalhos de acessibilidade"
-        className="fixed inset-x-0 bottom-0 z-30 flex gap-1 border-t border-tinta/10 bg-white px-2 pt-1 pb-[max(0.25rem,env(safe-area-inset-bottom))] shadow-[0_-4px_16px_rgba(0,0,0,0.06)] md:hidden"
+        className="fixed inset-x-0 bottom-0 z-30 flex gap-1 border-t border-tinta/10 bg-white px-2 pt-1 pb-[max(0.25rem,env(safe-area-inset-bottom))] shadow-[0_-4px_16px_rgba(0,0,0,0.06)] lg:hidden"
       >
         <button
           type="button"
@@ -164,7 +164,7 @@ export default function BarraAcessibilidade() {
         aria-expanded={aberta}
         aria-controls="painel-acessibilidade"
         aria-label={aberta ? 'Fechar opções de acessibilidade' : 'Abrir opções de acessibilidade'}
-        className="hidden h-14 w-14 items-center justify-center rounded-full bg-tinta text-3xl text-white shadow-lg ring-2 ring-white hover:bg-mare md:flex"
+        className="hidden h-14 w-14 items-center justify-center rounded-full bg-tinta text-3xl text-white shadow-lg ring-2 ring-white hover:bg-mare lg:flex"
       >
         <span aria-hidden="true">{aberta ? '✕' : '♿'}</span>
       </button>

@@ -23,7 +23,7 @@ export default function VoltarAoTopo() {
       type="button"
       onClick={voltarAoTopo}
       aria-label="Voltar ao topo da página"
-      className="fixed bottom-6 right-6 z-30 hidden h-14 w-14 items-center justify-center rounded-full bg-mare text-2xl text-white shadow-lg ring-2 ring-white hover:bg-sinal hover:text-tinta md:flex"
+      className="fixed bottom-6 right-6 z-30 hidden h-14 w-14 items-center justify-center rounded-full bg-mare text-2xl text-white shadow-lg ring-2 ring-white hover:bg-sinal hover:text-tinta lg:flex"
     >
       <span aria-hidden="true">↑</span>
     </button>
