@@ -22,7 +22,7 @@ export async function requisicao<T>(caminho: string, opcoes: RequestInit = {}): 
   try {
     // O cabeçalho Content-Type só vai quando há corpo (POST e PUT).
     // Num GET ele faria o navegador mandar uma consulta extra de CORS antes.
-    resposta = await fetch(${API_URL}${caminho}, {
+      resposta = await fetch(`${API_URL}${caminho}`, {
       ...opcoes,
       headers: opcoes.body
         ? { 'Content-Type': 'application/json', ...opcoes.headers }

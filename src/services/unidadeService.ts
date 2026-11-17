@@ -10,7 +10,7 @@ export async function listarUnidadesPorServico(idServico: number): Promise<Unida
       (servicosPorUnidade[unidade.id] ?? []).includes(idServico),
     )
   }
-  return requisicao<Unidade[]>(/unidades?servicoId=${idServico})
+  return requisicao<Unidade[]>(`/unidades?servicoId=${idServico}`)
 }
 
 // GET /unidades/{id}
@@ -21,5 +21,5 @@ export async function buscarUnidade(id: number): Promise<Unidade> {
     if (!unidade) throw new ErroRequisicao('Unidade não encontrada.', 404)
     return unidade
   }
-  return requisicao<Unidade>(/unidades/${id})
+  return requisicao<Unidade>(`/unidades/${id}`)
 }

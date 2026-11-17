@@ -19,5 +19,5 @@ export async function buscarServico(id: number): Promise<Servico> {
     if (!servico) throw new ErroRequisicao('Serviço não encontrado.', 404)
     return servico
   }
-  return requisicao<Servico>(/servicos/${id})
+  return requisicao<Servico>(`/servicos/${id}`)
 }
