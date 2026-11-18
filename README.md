@@ -26,3 +26,25 @@ Com isso, a pessoa perde a vez, depende de alguém para acompanhá-la ou desiste
 - Pessoas que perderam a audição com a idade.
 
 O projeto também prevê, no roadmap, a ampliação para pessoas com deficiência motora (fase 2) e para pessoas cegas, não alfabetizadas e em situação de vulnerabilidade (fase 3).
+
+## Funcionalidades
+
+- Entender o serviço: tradução para Libras com o VLibras e textos em português simples, com checklist dos documentos que precisam ser levados.
+- Agendar sem telefonar: escolha do serviço, da unidade, do dia e do horário pelo site.
+- Ser avisado na hora: na página de acompanhamento, a tela pisca, o celular vibra e o título da aba muda quando o atendente chama.
+- Conversar no balcão: a fala do atendente aparece em legenda ao vivo, em letras grandes.
+- Acessibilidade: aumento da letra, alto contraste, leitura da página em voz alta, navegação por teclado e textos para leitores de tela.
+
+## Tecnologias
+
+| Tecnologia | Uso no projeto |
+| --- | --- |
+| React 19 + Vite | Base da aplicação (SPA) |
+| TypeScript | Tipagem dos dados e dos componentes |
+| Tailwind CSS 4 | Estilo e layout responsivo |
+| React Router 7 | Rotas estáticas e rotas com parâmetro |
+| Fetch API | Comunicação com a API Java (sem bibliotecas externas) |
+| Web Speech API | Legenda ao vivo e leitura em voz alta |
+| Vibration API | Aviso por vibração no celular |
+| VLibras | Tradução de português para Libras (governo federal) |
+| Vercel | Publicação do front-end |
