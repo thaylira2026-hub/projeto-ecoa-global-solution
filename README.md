@@ -79,3 +79,34 @@ O projeto também prevê, no roadmap, a ampliação para pessoas com deficiênci
 | /integrantes | Equipe |
 | /faq | Perguntas frequentes |
 | /contato | Formulário de contato |
+
+## Integrantes
+
+| Nome | RM | Função | GitHub |
+| --- | --- | --- | --- |
+| Bianca Pereira da Silva | RM571077 | Back-end Java | [biancapereirasilva](https://github.com/biancapereirasilva) |
+| Isabelle Souza Lima Pires Araujo | RM569370 | Banco de dados e IA | [isasouzz](https://github.com/isasouzz) |
+| Maria Eduarda Cavallari Quarelo | RM570462 | Python e Software Engineering | [dudaquarelo](https://github.com/dudaquarelo) |
+| Thays Lira de Oliveira | RM568799 | Front-end | [thaylira2026-hub](https://github.com/thaylira2026-hub) |
+
+## Como executar
+
+Pré-requisito: [Node.js](https://nodejs.org) 20 ou mais recente.
+
+    # 1. Clonar o repositório
+    git clone https://github.com/thaylira2026-hub/projeto-ecoa-global-solution.git
+    cd projeto-ecoa-global-solution
+
+    # 2. Instalar as dependências
+    npm install
+
+    # 3. Configurar a URL da API Java
+    cp .env.example .env
+    # abra o arquivo .env e preencha VITE_API_URL com a URL da API
+
+    # 4. Rodar em modo de desenvolvimento
+    npm run dev
+
+O site abre em http://localhost:5173.
+
+Para gerar a versão de produção: npm run build.
