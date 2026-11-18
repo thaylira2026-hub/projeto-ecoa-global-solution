@@ -1,9 +1,6 @@
-// Endereço da API Java. Vem do arquivo .env (local) ou das variáveis da Vercel.
-export const API_URL = import.meta.env.VITE_API_URL ?? ''
-
-// Enquanto não houver URL da API, os services usam os dados de dadosTemporarios.ts.
-// ATENÇÃO: antes da entrega, a URL precisa estar preenchida (mock não vale nota).
-export const USANDO_DADOS_TEMPORARIOS = API_URL === ''
+// Endereço da API Java publicada no Render. Vem do arquivo .env (local) ou das variáveis da Vercel.
+// O replace tira a barra do final, se alguém colocar: https://...onrender.com/ vira https://...onrender.com
+export const API_URL = (import.meta.env.VITE_API_URL ?? '').replace(/\/$/, '')
 
 // Erro com a mensagem pronta para mostrar na tela e o status HTTP (0 = sem conexão)
 export class ErroRequisicao extends Error {
