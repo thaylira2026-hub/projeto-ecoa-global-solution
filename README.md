@@ -1,32 +1,28 @@
-# React + TypeScript + Vite
+# Ecoa+
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> Mais acesso, mais voz, mais cidadania.
 
-Currently, two official plugins are available:
+Projeto da Global Solution 2026/2 (CitizenTech) da FIAP, desenvolvido pela equipe Inova Lab, turma 1TDSR.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Objetivo
 
-## React Compiler
+O Ecoa+ torna o atendimento em serviços públicos acessível para pessoas surdas e com deficiência auditiva, do começo ao fim: entender o serviço, agendar, esperar a vez e conversar com o atendente.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## O problema
 
-## Expanding the Oxlint configuration
+O atendimento público ainda depende de ouvir:
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- o agendamento costuma ser feito por telefone;
+- na sala de espera, o nome é chamado em voz alta;
+- no balcão, o atendente fala atrás de um vidro ou de máscara, o que impede a leitura labial;
+- as informações vêm em português difícil, que nem sempre é a primeira língua de quem usa Libras.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+Com isso, a pessoa perde a vez, depende de alguém para acompanhá-la ou desiste do serviço.
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Público
+
+- Pessoas surdas que se comunicam em Libras.
+- Pessoas com deficiência auditiva que usam aparelho auditivo e fazem leitura labial.
+- Pessoas que perderam a audição com a idade.
+
+O projeto também prevê, no roadmap, a ampliação para pessoas com deficiência motora (fase 2) e para pessoas cegas, não alfabetizadas e em situação de vulnerabilidade (fase 3).
