@@ -6,6 +6,7 @@ import Servicos from './pages/Servicos'
 import ServicoDetalhe from './pages/ServicoDetalhe'
 import Agendamento from './pages/Agendamento'
 import Acompanhar from './pages/Acompanhar'
+import Balcao from './pages/Balcao'
 import Sobre from './pages/Sobre'
 import Integrantes from './pages/Integrantes'
 import Faq from './pages/Faq'
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/servicos/:id" element={<ServicoDetalhe />} />
           <Route path="/agendar/:servicoId" element={<Agendamento />} />
           <Route path="/atendimento/:id" element={<Acompanhar />} />
+          <Route path="/balcao" element={<Balcao />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/integrantes" element={<Integrantes />} />
           <Route path="/faq" element={<Faq />} />
