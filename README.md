@@ -110,3 +110,25 @@ Pré-requisito: [Node.js](https://nodejs.org) 20 ou mais recente.
 O site abre em http://localhost:5173.
 
 Para gerar a versão de produção: npm run build.
+
+## Links
+
+| | |
+| --- | --- |
+| Site publicado (Vercel) | https://projeto-ecoa-global-solution.vercel.app |
+| Repositório (GitHub) | https://github.com/thaylira2026-hub/projeto-ecoa-global-solution |
+| API Java | a preencher com a URL pública da API |
+| Vídeo (YouTube) | a preencher com o link do vídeo |
+
+## Uso de inteligência artificial
+
+A equipe usou o Claude (Anthropic) como apoio no front-end: para gerar e revisar partes do código, explicar conceitos, encontrar erros e sugerir melhorias de acessibilidade. O código sugerido foi revisado, testado nas três resoluções e ajustado pela equipe antes de entrar no projeto.
+
+## Contato
+
+- E-mail: ecoa.inovalab@gmail.com
+- Formulário: página [Contato](https://projeto-ecoa-global-solution.vercel.app/contato) do site
+
+---
+
+Feito pela equipe Inova Lab · FIAP · Global Solution 2026/2
