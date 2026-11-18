@@ -73,7 +73,7 @@ export default function Solucao() {
     <div className="space-y-12">
       <TituloPagina
         titulo="Como o Ecoa+ funciona"
-        descricao="O Ecoa+ torna o atendimento em serviços públicos acessível para pessoas surdas e com deficiência auditiva, do começo ao fim: entender o serviço, agendar, esperar a vez e conversar com o atendente."
+        descricao="Criamos pontes entre pessoas, informação e serviços públicos. O Ecoa+ torna o atendimento acessível para pessoas surdas e com deficiência auditiva, do começo ao fim: entender o serviço, agendar, esperar a vez e conversar com o atendente."
       />
 
       <section aria-labelledby="titulo-modos">

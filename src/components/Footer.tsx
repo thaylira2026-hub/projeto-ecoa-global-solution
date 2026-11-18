@@ -55,6 +55,9 @@ export default function Footer() {
               agende e seja avisado quando chegar a sua vez.
             </p>
             <p className="mt-3 font-semibold text-sinal">Mais acesso, mais voz, mais cidadania.</p>
+                        <p className="mt-2 text-sm leading-relaxed text-nevoa/70">
+              Toda pessoa tem uma voz. Todo espaço pode ser mais inclusivo.
+            </p>
           </div>
 
           {colunas.map((coluna) => (
