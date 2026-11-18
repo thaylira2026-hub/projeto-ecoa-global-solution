@@ -48,3 +48,34 @@ O projeto também prevê, no roadmap, a ampliação para pessoas com deficiênci
 | Vibration API | Aviso por vibração no celular |
 | VLibras | Tradução de português para Libras (governo federal) |
 | Vercel | Publicação do front-end |
+
+## Estrutura do projeto
+
+    src/
+    ├── components/   # Partes reutilizáveis: cabeçalho, rodapé, botões, cartões e avisos
+    ├── data/         # Conteúdo fixo: integrantes, FAQ e ícones
+    ├── hooks/        # Lógica reutilizável: leitura em voz alta e reconhecimento de fala
+    ├── pages/        # Uma página para cada rota
+    ├── services/     # Chamadas à API Java com fetch
+    ├── types/        # Tipos TypeScript dos dados da API
+    ├── utils/        # Funções de apoio: datas e atalhos
+    ├── App.tsx       # Definição das rotas
+    ├── main.tsx      # Ponto de entrada da aplicação
+    └── index.css     # Tema do Tailwind, cores e animações
+    public/           # Favicon e fotos das integrantes
+
+## Rotas
+
+| Rota | Página |
+| --- | --- |
+| / | Início |
+| /solucao | Como a solução funciona |
+| /servicos | Lista de serviços com filtro por categoria |
+| /servicos/:id | Detalhe do serviço e documentos necessários |
+| /agendar/:servicoId | Formulário de agendamento |
+| /atendimento/:id | Acompanhamento e aviso de "Chegou a sua vez!" |
+| /balcao | Painel do atendente com legenda ao vivo |
+| /sobre | Sobre o projeto |
+| /integrantes | Equipe |
+| /faq | Perguntas frequentes |
+| /contato | Formulário de contato |
