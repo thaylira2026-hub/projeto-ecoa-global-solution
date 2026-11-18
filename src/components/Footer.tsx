@@ -34,6 +34,7 @@ const colunas: { titulo: string; links: LinkRodape[] }[] = [
         externo: true,
       },
       { label: 'Roadmap', to: '/solucao' },
+      { label: 'Área do atendente', to: '/balcao' },
     ],
   },
 ]
