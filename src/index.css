@@ -9,6 +9,16 @@
   --color-mare-clara: #ccebe6;
   --color-sinal: #ffc83d;
   --color-nevoa: #eef4f3;
+  --animate-piscar: piscar 0.8s ease-in-out 8;
+  @keyframes piscar {
+    0%,
+    100% {
+      background-color: var(--color-sinal);
+    }
+    50% {
+      background-color: #ffffff;
+    }
+  }
 
   --animate-eco: eco 3s ease-out infinite;
 
