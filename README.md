@@ -10,6 +10,7 @@
 <p align="center">
   <a href="https://projeto-ecoa-global-solution.vercel.app"><img src="https://img.shields.io/badge/Site-no_ar-0f766e?style=for-the-badge&logo=vercel&logoColor=white" alt="Site publicado na Vercel" /></a>
   <a href="https://ecoamais-api.onrender.com/servicos"><img src="https://img.shields.io/badge/API_Java-Render-0e2a33?style=for-the-badge&logo=openjdk&logoColor=white" alt="API Java publicada no Render" /></a>
+  <a href="https://youtu.be/a-cndPdfq9M"><img src="https://img.shields.io/badge/Vídeo-YouTube-ff0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Vídeo do projeto no YouTube" /></a>
 </p>
 
 <p align="center">
@@ -210,7 +211,7 @@ O site abre em `http://localhost:5173`. Para gerar a versão de produção: `npm
   <a href="https://projeto-ecoa-global-solution.vercel.app"><img src="https://img.shields.io/badge/🌐_Site_publicado-Vercel-0f766e?style=for-the-badge" alt="Site publicado na Vercel" /></a>
   <a href="https://github.com/thaylira2026-hub/projeto-ecoa-global-solution"><img src="https://img.shields.io/badge/💻_Repositório-GitHub-181717?style=for-the-badge" alt="Repositório no GitHub" /></a>
   <a href="https://ecoamais-api.onrender.com/servicos"><img src="https://img.shields.io/badge/☕_API_Java-Render-0e2a33?style=for-the-badge" alt="API Java no Render" /></a>
-  <img src="https://img.shields.io/badge/🎬_Vídeo-em_breve-9ca3af?style=for-the-badge" alt="Vídeo no YouTube: em breve" />
+  <a href="https://youtu.be/a-cndPdfq9M"><img src="https://img.shields.io/badge/🎬_Vídeo-YouTube-ff0000?style=for-the-badge" alt="Vídeo do projeto no YouTube" /></a>
 </p>
 
 ## 🤖 Uso de inteligência artificial
