@@ -117,7 +117,7 @@ Para gerar a versão de produção: npm run build.
 | --- | --- |
 | Site publicado (Vercel) | https://projeto-ecoa-global-solution.vercel.app |
 | Repositório (GitHub) | https://github.com/thaylira2026-hub/projeto-ecoa-global-solution |
-| API Java | a preencher com a URL pública da API |
+| API Java | https://ecoamais-api.onrender.com | |
 | Vídeo (YouTube) | a preencher com o link do vídeo |
 
 ## Uso de inteligência artificial
